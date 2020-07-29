@@ -3,7 +3,11 @@ import React from 'react';
 const Header = () => {
     return (
         <header>
-            εὐαγωγία
+            <span>
+                Εὐαγωγία
+            </span>
         </header>
     )
 }
+
+export default Header;
