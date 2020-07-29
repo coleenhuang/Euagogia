@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Header from './Header';
 import LandingPage from './landing/LandingPage';
 import LanguagesPage from './languages/LanguagesPage';
@@ -14,13 +14,11 @@ function App() {
     <main className='App'>
       <Header />
       <div className='container'>
-        <BrowserRouter>
           <Route path='/' exact component={LandingPage}/>
           <Route path='/languages' exact component={LanguagesPage} />
           <Route path='/sets' exact component={SetPage} />
-          <Route path='/card' exact component={CardPage} />
-          <Route path='/edit' exact component={CardEditPage} />
-        </BrowserRouter>
+          <Route path='/cards' exact component={CardPage} />
+          <Route path='/edits' exact component={CardEditPage} />
       </div>
     </main>
   );

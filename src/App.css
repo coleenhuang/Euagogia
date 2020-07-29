@@ -6,6 +6,11 @@ header {
     background-color: lightgray;
 }
 
+header a {
+    text-decoration: none;
+    color: black
+}
+
 .container {
     padding: 10vh 15vw;
 }
